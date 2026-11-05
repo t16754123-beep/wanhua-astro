@@ -13,6 +13,22 @@ npm run dev
 
 生产构建：`npm run build`，输出目录为 `dist`，可部署到支持静态文件的托管服务。页面链接使用 `.html` 后缀。
 
+## Cloudflare Pages 部署
+
+GitHub 仓库：`t16754123-beep/wanhua-astro`，生产分支为 `main`。
+
+Cloudflare Pages 连接 GitHub 时选择 Astro，构建命令填 `npm run build`，输出目录填 `dist`，根目录留空，Node.js 使用 22 或以上。Pages 的构建域名会通过 `CF_PAGES_URL` 自动用于网站地图；绑定自定义域名后，可设置构建环境变量 `SITE_URL` 为完整的 HTTPS 域名。
+
+本地直接上传可使用官方 Wrangler：
+
+```sh
+npx wrangler login
+npm run build
+npx wrangler pages deploy dist --project-name=wanhua-astro --branch=main
+```
+
+直接上传前设置 `SITE_URL` 为 Cloudflare 返回的实际项目网址，再重新构建。Wrangler 登录信息保存在工具的用户配置中，不应提交到 GitHub。
+
 ## 修改内容
 
 - Logo：`public/assets/logo.png`，保留上传原图。
