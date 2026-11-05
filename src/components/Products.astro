@@ -1,0 +1,10 @@
+---
+import catalog from '../data/catalog.json';
+const {category=null,compact=false}=Astro.props;
+const shown=category===null?catalog.products:catalog.products.filter(p=>p.category===category);
+---
+<div class:list={['catalog',{'compact':compact}]}><div class="product-tabs" role="tablist" aria-label="产品分类">{(category===null?catalog.groups:[]).map((name,i)=><button role="tab" id={`tab-${i}`} aria-controls={`panel-${i}`} aria-selected={i===0?'true':'false'} tabindex={i===0?0:-1} data-category={i}>{name}</button>)}</div>
+{(category===null?[0,1,2,3,4]:[category]).map(c=><div class="product-panel" role={category===null?'tabpanel':undefined} id={`panel-${c}`} aria-labelledby={category===null?`tab-${c}`:undefined} hidden={category===null&&c!==0}><div class="product-grid">{shown.filter(p=>p.category===c).map(p=><a class="product-card" href={p.url}><img src={p.image} width="380" height="380" alt={p.name} loading="lazy"/><span>{p.name}</span></a>)}</div></div>)}</div>
+<script>
+document.querySelectorAll('.catalog').forEach(root=>{const tabs=Array.from(root.querySelectorAll<HTMLButtonElement>('[role=tab]'));function select(tab:HTMLButtonElement){tabs.forEach(t=>{const active=t===tab;t.setAttribute('aria-selected',String(active));t.tabIndex=active?0:-1;const panel=root.querySelector<HTMLElement>('#panel-'+t.dataset.category);if(panel)panel.hidden=!active})}tabs.forEach((tab,i)=>{tab.addEventListener('click',()=>select(tab));tab.addEventListener('keydown',e=>{let next=i;if(e.key==='ArrowRight')next=(i+1)%tabs.length;else if(e.key==='ArrowLeft')next=(i-1+tabs.length)%tabs.length;else if(e.key==='Home')next=0;else if(e.key==='End')next=tabs.length-1;else return;e.preventDefault();select(tabs[next]);tabs[next].focus()})})});
+</script>

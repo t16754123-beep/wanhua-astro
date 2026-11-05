@@ -1,0 +1,17 @@
+---
+import '../styles/site.css';
+const {title='常州市万华机房设备有限公司',active=''}=Astro.props;
+const nav=[['万华首页','/'],['关于万华','/about.html'],['OA智能网络地板','/products/oa.html'],['防静电地板','/products/antistatic.html'],['通风板','/products/ventilation.html'],['产品中心','/products.html'],['工程展示','/cases.html'],['服务中心','/service.html'],['地板资讯','/news.html'],['联系我们','/contact.html']];
+---
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="description" content="常州市万华机房设备有限公司，专业开发、研制和生产全钢防静电活动地板、OA智能化高架活动地板、全钢陶瓷活动地板。品质为根，诚信为本。"/><link rel="icon" type="image/png" href="/assets/logo.png"/><link rel="stylesheet" href="/Templates/cn/css/metinfo.css"/><title>{title} | 亿华地板</title></head><body>
+<a class="skip-link" href="#main">跳转到正文</a>
+<header><div class="top-nav"><span>您好！欢迎来到常州市万华机房设备有限公司官网！</span><div class="top-language"><a href="/news.html">常见问题</a><a href="/contact.html">联系万华</a><a href="/sitemap.xml">网站地图</a></div></div>
+<div class="top-logo inner"><a href="/" class="brand" aria-label="亿华地板首页"><img src="/assets/logo.png" width="126" height="76" alt="亿华 YIHUA Logo"/><span><strong>常州市万华机房设备有限公司</strong><small>CHANGZHOU WANHUA ACCESS FLOOR</small></span></a><div class="brand-motto">品质为根 · 诚信为本<small>专注活动地板开发、研制与生产</small></div></div>
+<div class="nav-band"><nav class="navigation" aria-label="主导航"><button class="mobile-menu" aria-expanded="false" aria-controls="main-menu">☰ 网站导航</button><ul class="menu" id="main-menu">{nav.map(([label,url])=><li class="menu-item font2"><a href={url} class:list={{selected:active===url}} aria-current={active===url?'page':undefined}>{label}</a>{url==='/about.html'&&<ul class="sub-menu"><li><a href="/about.html">公司简介</a></li><li><a href="/culture.html">企业文化</a></li></ul>}{url==='/products.html'&&<ul class="sub-menu"><li><a href="/products/finishes.html">贴面系列</a></li><li><a href="/products/accessories.html">配件系列</a></li></ul>}</li>)}</ul></nav></div></header>
+<main id="main"><slot/></main>
+<footer class="footer_bg"><div class="footmenu inner custom-footer"><div><img src="/assets/logo.png" width="100" height="60" alt="亿华 Logo" loading="lazy"/><h2>万华机房 · 亿华地板</h2><p>品质超卓　价格合理　服务周到</p></div><div><h3>产品中心</h3><a href="/products/antistatic.html">防静电地板</a><a href="/products/oa.html">OA智能网络地板</a><a href="/products/ventilation.html">通风板</a></div><div><h3>关于我们</h3><a href="/about.html">公司简介</a><a href="/culture.html">企业文化</a><a href="/cases.html">工程展示</a></div><div><h3>服务中心</h3><a href="/service.html">安装与维护</a><a href="/news.html">常见问题</a><a href="/contact.html">联系我们</a></div><div><h3>常州市万华机房设备有限公司</h3><p>全钢防静电活动地板系列专业厂家</p><p>与国内外朋友携手合作，共谋发展。</p><a href="/contact.html">填写产品需求 →</a></div></div><div class="copyright">Copyright © {new Date().getFullYear()} 常州市万华机房设备有限公司 · 亿华地板</div></footer>
+<button class="back-top" aria-label="返回顶部" title="返回顶部">↑</button>
+<script>
+const menu=document.querySelector('.mobile-menu');menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));document.querySelector('.menu')?.classList.toggle('open',open)});
+document.querySelector('.back-top')?.addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));
+</script></body></html>

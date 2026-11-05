@@ -1,0 +1,180 @@
+{
+  "groups": [
+    "防静电地板",
+    "OA智能网络地板",
+    "通风板",
+    "贴面系列",
+    "配件系列"
+  ],
+  "products": [
+    {
+      "name": "铝制防静电地板",
+      "url": "/product/2015-7-2/103.html",
+      "image": "/upLoad/product/month_1611/201611160914149759.jpg",
+      "group": "防静电地板",
+      "category": 0
+    },
+    {
+      "name": "木基防静电地板",
+      "url": "/product/2015-7-2/102.html",
+      "image": "/upLoad/product/month_1507/201507021658117837.jpg",
+      "group": "防静电地板",
+      "category": 0
+    },
+    {
+      "name": "硫酸钙陶瓷防静电地板",
+      "url": "/product/2015-7-2/101.html",
+      "image": "/upLoad/product/month_1507/201507030935432776.jpg",
+      "group": "防静电地板",
+      "category": 0
+    },
+    {
+      "name": "钢制陶瓷防静电地板",
+      "url": "/product/2015-7-2/100.html",
+      "image": "/upLoad/product/month_1507/201507021654317423.jpg",
+      "group": "防静电地板",
+      "category": 0
+    },
+    {
+      "name": "硫酸钙防静电地板",
+      "url": "/product/2015-7-2/99.html",
+      "image": "/upLoad/product/month_1611/201611160907371052.jpg",
+      "group": "防静电地板",
+      "category": 0
+    },
+    {
+      "name": "木芯包钢网络地板",
+      "url": "/product/2015-7-2/108.html",
+      "image": "/upLoad/product/month_1507/201507060911543725.jpg",
+      "group": "OA智能网络地板",
+      "category": 1
+    },
+    {
+      "name": "硫酸钙包钢网络地板",
+      "url": "/product/2015-7-2/107.html",
+      "image": "/upLoad/product/month_1507/201507021749209039.jpg",
+      "group": "OA智能网络地板",
+      "category": 1
+    },
+    {
+      "name": "超低扣槽式多功能网络地板",
+      "url": "/product/2015-7-2/106.html",
+      "image": "/upLoad/product/month_1507/201507021728281874.jpg",
+      "group": "OA智能网络地板",
+      "category": 1
+    },
+    {
+      "name": "线槽式钢制OA智能网络地板",
+      "url": "/product/2015-7-2/105.html",
+      "image": "/upLoad/product/month_1902/201902281345244813.jpg",
+      "group": "OA智能网络地板",
+      "category": 1
+    },
+    {
+      "name": "钢制标准型OA智能网络地板",
+      "url": "/product/2015-7-2/104.html",
+      "image": "/upLoad/product/month_1611/201611151342202033.jpg",
+      "group": "OA智能网络地板",
+      "category": 1
+    },
+    {
+      "name": "铝制通风地板",
+      "url": "/product/2015-7-2/110.html",
+      "image": "/upLoad/product/month_1507/20150702181112608.jpg",
+      "group": "通风板",
+      "category": 2
+    },
+    {
+      "name": "钢制通风地板",
+      "url": "/product/2015-7-2/109.html",
+      "image": "/upLoad/product/month_1507/201507021808528710.jpg",
+      "group": "通风板",
+      "category": 2
+    },
+    {
+      "name": "地毯及贴面花色",
+      "url": "/product/2015-7-2/115.html",
+      "image": "/upLoad/product/month_1507/201507030918412423.jpg",
+      "group": "贴面系列",
+      "category": 3
+    },
+    {
+      "name": "PVC地垫及贴面花色",
+      "url": "/product/2015-7-2/114.html",
+      "image": "/upLoad/product/month_1507/201507030916035256.jpg",
+      "group": "贴面系列",
+      "category": 3
+    },
+    {
+      "name": "HPL贴面花色",
+      "url": "/product/2015-7-2/113.html",
+      "image": "/upLoad/product/month_1507/201507030914059550.jpg",
+      "group": "贴面系列",
+      "category": 3
+    },
+    {
+      "name": "陶瓷贴面花色",
+      "url": "/product/2015-7-2/112.html",
+      "image": "/upLoad/product/month_1507/201507030854079262.jpg",
+      "group": "贴面系列",
+      "category": 3
+    },
+    {
+      "name": "PVC贴面花色",
+      "url": "/product/2015-7-2/111.html",
+      "image": "/upLoad/product/month_1507/201507021817098687.jpg",
+      "group": "贴面系列",
+      "category": 3
+    },
+    {
+      "name": "地插座",
+      "url": "/product/2015-7-2/119.html",
+      "image": "/upLoad/product/month_1507/201507021606347551.jpg",
+      "group": "配件系列",
+      "category": 4
+    },
+    {
+      "name": "辅助支撑配件",
+      "url": "/product/2015-7-2/118.html",
+      "image": "/upLoad/product/month_1507/201507030924008966.jpg",
+      "group": "配件系列",
+      "category": 4
+    },
+    {
+      "name": "横梁",
+      "url": "/product/2015-7-2/117.html",
+      "image": "/upLoad/product/month_1507/20150703092601978.jpg",
+      "group": "配件系列",
+      "category": 4
+    },
+    {
+      "name": "支架",
+      "url": "/product/2015-7-2/116.html",
+      "image": "/upLoad/product/month_1507/201507030928044723.jpg",
+      "group": "配件系列",
+      "category": 4
+    }
+  ],
+  "faq": [
+    {
+      "url": "/news/2015-6-29/96.html",
+      "title": "还记得网络地板的安装要点吗？",
+      "text": "那么今天主要和大家一起分享一下关于网络地板安装的相关要点。   那么它的相关要点主要分为以下几点：       1、首先第一点就是在铺网络地板之前，在做建筑设计的时候我们其实不用考虑一些其他的东西，我们只要考虑到铺装网络"
+    },
+    {
+      "url": "/news/2015-6-13/94.html",
+      "title": "防静电地板使用、维护要求",
+      "text": "一．使用环境全钢防静电地板铺设防静电地板的房间温度控制住15℃-35℃湿度控制在45％-75％RH；如果机房长期处丁高温或低温条件，地板表面会出现起皮或断裂现象。二．维护要求1．禁止使用锋利的器具直接在地板上施工操作，防止破坏表面的防静电性能和美观程度；2．在使用过程中禁止人员从"
+    },
+    {
+      "url": "/news/2015-5-19/91.html",
+      "title": "什么是OA网络地板",
+      "text": "OA网络地板为四角独立支撑结构，扣槽式线槽盖板，地板的上板为超硬质钢板，下板为深拉深级钢板，地板表面经过导电环氧树脂喷塑处理，内腔填充发泡水泥填料，支座为镀锌结构，高度可调并能自锁。主要组件有：钢地板块、槽盖板、中心盖板、连接件、支架。产品优势：超低安装高度，地板调节高度范围为3"
+    },
+    {
+      "url": "/news/2015-4-29/89.html",
+      "title": "防静电地板与网络地板有何不同？",
+      "text": "核心提示：无论是防静电地板还是网络地板，其属于共同类型的地板，都是一般由于需要抗静电的地方，但是防静电地板与网络地板又有本质上的不同，而这种不同具体主要体现在三大方面。   　　无论是防静电地板还是网络地板，其属于共同类型的地板，都是一般由于需要抗静电的地方，但是防静电"
+    }
+  ]
+}
